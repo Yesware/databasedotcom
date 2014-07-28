@@ -136,6 +136,14 @@ Specify the `:host` option when creating your Client, e.g,
 ```ruby
 Databasedotcom::Client.new :host => "test.salesforce.com", ...
 ```
+#### Proxy Support
+You can specify an HTTP proxy by specifying `:proxy` and optionally `:proxy_username` and `:proxy_password` as so:
+```yaml
+proxy: http://proxy.foo.com
+proxy_username: someuser
+proxy_password: password
+```
+Proxy configuration is also supported through the use of the ENV['HTTP_PROXY'] variable.
 
 ## Authentication
 
