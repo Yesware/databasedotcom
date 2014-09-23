@@ -116,7 +116,7 @@ describe Databasedotcom::Sobject::Sobject do
       context "when the objects are different classes" do
 
         before do
-          @second = stub(:is_a? => false)
+          @second = double(:is_a? => false)
         end
 
         it "returns false" do
